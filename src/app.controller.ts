@@ -19,7 +19,6 @@ export class AppController {
   @Render('register')
   getRegister() {
     return {
-      message: 'Register',
       errors: [],
       newData: {}
     };
@@ -93,8 +92,5 @@ export class AppController {
   @Get('success')
   @Render('success')
   getSuccess() {
-    return {
-      message: 'Success'
-    };
   }
 }

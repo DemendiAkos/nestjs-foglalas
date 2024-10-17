@@ -38,6 +38,7 @@ export class AppController {
       time: newRegisterDto.time,
       people: newRegisterDto.people
     }
+
     console.log(newData);
 
 
@@ -83,9 +84,9 @@ export class AppController {
         errors: errors,
         newData: newData
       })
+    } else {
+      response.redirect('/success')
     }
-
-    response.redirect('/success')
   }
 
 
